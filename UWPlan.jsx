@@ -22,7 +22,7 @@ var CreatePageApp = React.createClass({
           
         <div className="container containerwidth">
           <div className="headerback">
-             <h2> UW Plan </h2>
+             <h2 className = "uwplan"> UW Plan </h2>
           </div>
         </div>
 
