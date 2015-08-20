@@ -19,22 +19,10 @@ var CreatePageApp = React.createClass({
 
     render: function(){
       return(
-        <div className="container">
-          <div className="form-container">
-            <div className="form-row">
-              <div className="well">
-                <h2>Step 1:</h2>
-                <h3>Please tell us a bit about your company</h3>
-              </div>
-              <div>
-                <div className="progress">
-                  <div className="progress-bar active" role="progressbar" aria-valuemin="0" aria-valuemax="100" >
-                  </div>
-                </div>
-              </div>
-              <div className=" well currentStep">
-              </div>
-            </div>
+          
+        <div className="container containerwidth">
+          <div className="headerback">
+             <h2> UW Plan </h2>
           </div>
         </div>
 
