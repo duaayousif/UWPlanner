@@ -19,8 +19,8 @@ var CreatePageApp = React.createClass({
 
     render: function(){
       return(
-          
-        <div className="container containerwidth">
+
+        <div className="container-fluid containerwidth">
           <div className="headerback">
              <h2> UW Plan </h2>
           </div>
