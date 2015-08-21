@@ -18,18 +18,17 @@ var CreatePageApp = React.createClass({
 
     render: function(){
       return(
-
-        <div className="container containerwidth">
+        <div className="container-fluid containerwidth">
           <div className="headerback">
              <h2> UW Plan </h2>
           </div>
           <div className="dropdown">
             <button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Dropdown trigger
+              Major
               <span className="caret"></span>
             </button>
             <ul className="dropdown-menu" aria-labelledby="dLabel">
-    ...       <li className="dropdown-header">Faculty of Applied Health Science</li>
+              <li className="dropdown-header">Faculty of Applied Health Science</li>
               <li><a href="#">Health Promotion</a></li>
               <li><a href="#">Health Studies</a></li>
               <li><a href="#">Kinesiology</a></li>
