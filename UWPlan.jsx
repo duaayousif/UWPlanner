@@ -17,7 +17,8 @@ var FacultyDropdown = React.createClass({
           <span className="caret"></span>
           </button>
          <ul className="dropdown-menu" aria-labelledby="dLabel">
-            {faculties.map(function(faculty){return <li onClick = {this.handleFaculty.bind(this,faculty)}><a href="#">{faculty}</a></li>})}
+            {faculties.map(function(faculty){
+               return <li onClick={this.handleFaculty.bind(this,faculty)}><a href="#">{faculty}</a></li>}.bind(this))}
           </ul>
           </div>
         )}
@@ -42,17 +43,13 @@ var CreatePageApp = React.createClass({
   debugger;
   console.log(xhr.responseText);
 },
-    handleFactDrop: function(event) {
-        this.setState({ facultyDrop: event.target.value });
-    },
-
     render: function(){
       return(
         <div className="container-fluid containerwidth">
           <div className="headerback">
              <h2> UW Plan </h2>
           </div>
-        <FacultyDropdown dropdownText="Choose your faculty"/>
+        <FacultyDropdown dropdownText="Select your faculty"/>
         </div>
 
       )
