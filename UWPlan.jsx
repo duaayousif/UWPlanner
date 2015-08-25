@@ -2,18 +2,17 @@ var FacultyDropdown = React.createClass({
     getInitialState: function(){
        return{
          chosenfaculty: "Major"
-           
+
        }
     },
     handleFaculty: function(faculty) {
         this.setState({chosenfaculty: faculty})
     },
     render: function() {
-<<<<<<< HEAD
+
         var faculties = ["Applied Health        Science","Arts","Engineering","Environment","Mathematics","Science"];
         debugger;
-=======
->>>>>>> origin/master
+
         return(
           <div className="dropdown">
           <h4> {this.props.dropdownText} </h4>
@@ -22,24 +21,17 @@ var FacultyDropdown = React.createClass({
           <span className="caret"></span>
           </button>
          <ul className="dropdown-menu" aria-labelledby="dLabel">
-<<<<<<< HEAD
+
            debugger;
             {faculties.map(function(faculty){return <li onClick = {this.handleFaculty(faculty)}><a href="#">{faculty}</a></li>}).bind(this)}
-=======
+
             {this.props.dropDownMenu.map(function(faculty){
                return <li onClick={this.props.whenClicked.bind(this,faculty)}><a href="#">{faculty}</a></li>}.bind(this))}
->>>>>>> origin/master
           </ul>
           </div>
         )}
      ,
-<<<<<<< HEAD
-})
 
-=======
-});
-    
->>>>>>> origin/master
 
 
 var CreatePageApp = React.createClass({
@@ -51,18 +43,18 @@ var CreatePageApp = React.createClass({
       facultyArray: ["Applied Health  Science","Arts","Engineering","Environment","Mathematics","Science"]
     }
   },
-    
+
   handleFaculty: function(faculty) {
         this.setState({chosenfaculty: faculty})
         this.chosenArray();
     },
-    
+
     chosenFaculty: function(){
         return(
             this.state.chosenfaculty
         )
     },
-    
+
     chosenArray: function(){
         if (this.state.chosenfaculty === "Major") {
             alert("Choose your faculty first");
@@ -86,8 +78,8 @@ var CreatePageApp = React.createClass({
             this.setState({chosenProgArray: ["ew"]})
         }
     },
-        
-            
+
+
   componentWillMount: function() {
   var xhr = new XMLHttpRequest();
   xhr.open('get', "https://api.uwaterloo.ca/v2/courses/CS/486.json?key=b047a012f7c27b8cabc7b750167e0f73", false);
