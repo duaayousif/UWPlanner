@@ -1,6 +1,6 @@
 var FacultyDropdown = React.createClass({
     getInitialState: function(){
-       return{    
+       return{
          chosenfaculty: "Major"
        }
     },
@@ -9,6 +9,7 @@ var FacultyDropdown = React.createClass({
     },
     render: function() {
         var faculties = ["Applied Health        Science","Arts","Engineering","Environment","Mathematics","Science"];
+        debugger;
         return(
           <div className="dropdown">
           <h4> {this.props.dropdownText} </h4>
@@ -17,13 +18,14 @@ var FacultyDropdown = React.createClass({
           <span className="caret"></span>
           </button>
          <ul className="dropdown-menu" aria-labelledby="dLabel">
-            {faculties.map(function(faculty){return <li onClick = {this.handleFaculty.bind(this,faculty)}><a href="#">{faculty}</a></li>})}
+           debugger;
+            {faculties.map(function(faculty){return <li onClick = {this.handleFaculty(faculty)}><a href="#">{faculty}</a></li>}).bind(this)}
           </ul>
           </div>
         )}
      ,
 })
-    
+
 
 
 var CreatePageApp = React.createClass({
