@@ -9,7 +9,6 @@ var FacultyDropdown = React.createClass({
           </button>
          <ul className="dropdown-menu" aria-labelledby="dLabel">
 
-           debugger;
             {this.props.dropDownMenu.map(function(faculty){
                return <li onClick={this.props.whenClicked.bind(this,faculty)}><a href="#">{faculty}</a></li>}.bind(this))}
           </ul>
